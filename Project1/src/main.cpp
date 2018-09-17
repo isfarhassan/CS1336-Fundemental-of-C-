@@ -64,6 +64,8 @@ int main(){
 	init();  // The init function calls all the subroutines, which are defined below.
 
 	return 0;
+
+//Isfar Hassan
 }
 
 
@@ -78,6 +80,7 @@ void asparagus() {  // Calculates the cost of Asparagus in the cart
 	cin >> costPer[0] ;					// Takes input of the cost of each item
 	aCost = amnt[0] * costPer[0] ;		// cost is calculated and stored to aCost.
 	cost[0] = aCost ;				// bCost is assigned to the array cost[]
+
 }
 
 void brusselsSprout() {		// Calculates the cost of Brussels Sprout in the cart
@@ -101,6 +104,8 @@ void corn() {		// Calculates the cost of Corn in the cart
 	cin >> costPer[2] ;					// Takes input of the cost of each item
 	cCost = amnt[2] * costPer[2] ;		// cost is calculated and stored to cCost.
 	cost[2] = cCost ;					// cCost is assigned to the array cost[].
+
+// Isfar Hassan
 }
 void lettuce() {		// Calculates the cost of Lettuce in the cart
 
@@ -112,6 +117,7 @@ void lettuce() {		// Calculates the cost of Lettuce in the cart
 	cin >> costPer[3] ;			// Takes input of the cost of each item
 	lCost = amnt[3] * costPer[3] ;	// cost is calculated and stored to lCost.
 	cost[3] = lCost ;			// lCost is assigned to the array cost[].
+
 }
 void pumpkins() {			// Calculates the cost of Pumpkins in the cart
 
@@ -136,6 +142,7 @@ void watermelons() {		// Calculates the cost of watermelons in the cart
 	cost[5] = wCost ;			// wCost is assigned to the array cost[]
 }
 
+
 void printCostToScreen(){  		// Prints to screen
 
 
@@ -149,7 +156,7 @@ void printCostToScreen(){  		// Prints to screen
 	}
 
 	tax = subTotal * (8.25/100);  // calculates the tax
-	total = subTotal + tax;		// calculates the Total
+	total = subTotal + tax;		  // calculates the Total
 
 	cout << "\nThe subtotal of the cart is " << setw(34) << right << "$"<< right << setw(9)<< fixed<< setprecision(2)<< subTotal ;
 	cout  << "\nThe tax is " << setw(51) << right << "$"<< right << setw(9)<< fixed<< setprecision(2)<< subTotal * (8.25/100);
@@ -167,4 +174,6 @@ void init() {      // This init function, initializes all the functions, accordi
 	watermelons();
 	printCostToScreen();
 }
+
+// Isfar Hassan
 
