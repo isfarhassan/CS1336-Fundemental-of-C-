@@ -7,17 +7,6 @@
  *  Author : Isfar Hassan
  */
 
-/*
- * Detailed objective:
- *  1. Input the shell of all c++ programs
- *  2. Declare the variables that I think I'm going to need
- *  3. Obtain user input.
- *  	3.1 get user input from keyboard
- *  	3.2 Check the vali if the input.
- *  	3.3 IF invalid print mressage and go to 3.1
- *  4. Perform calculations
- *  5. Outpit results
- */
 
 #include <iostream>     // Required to used the cout, cin functions
 #include <iomanip>		// Required for setw() method, which aligns the value later.
@@ -49,8 +38,7 @@ using namespace std;
  */
 
 string item;					// stores the current item name.
-string items [] = {"Asparagus", "Brussels Sprout(s)",
-		"Corn", "Lettuce", "Pumpkin(s)", "Watermelon(s)"};	// String items[] is defined, which is stores all
+
 // the names of the items, and used later in the for loop.
 int amnt[6] = {};				// This array will store the amount of each item, to help us in the for loop to print on screen.
 double cost[6] = {};			// This array will store the cost of each item, to help us in the for loop to print on screen.
@@ -65,7 +53,7 @@ int main(){
 
 	return 0;
 
-//Isfar Hassan
+	//Isfar Hassan
 }
 
 
@@ -105,7 +93,7 @@ void corn() {		// Calculates the cost of Corn in the cart
 	cCost = amnt[2] * costPer[2] ;		// cost is calculated and stored to cCost.
 	cost[2] = cCost ;					// cCost is assigned to the array cost[].
 
-// Isfar Hassan
+	// Isfar Hassan
 }
 void lettuce() {		// Calculates the cost of Lettuce in the cart
 
@@ -145,22 +133,23 @@ void watermelons() {		// Calculates the cost of watermelons in the cart
 
 void printCostToScreen(){  		// Prints to screen
 
-
+	string items [] = {"Asparagus", "Brussels Sprout(s)",
+			"Corn", "Lettuce", "Pumpkin(s)", "Watermelon(s)"};	// String items[] is defined, which is stores all
 
 	for (int i = 0; i < 6; i++)				// For loop which starts at 0, and goes until less than then the number of items. 0 to 5 = 6 items.
 	{
-		cout << "\nThe cart contains "<< left << setw(3) << amnt[i]
+		cout << "\nThe cart contains "<< right << setw(3) << amnt[i]
 																 << left << setw(40)<< items[i] + " that each cost " << "$"
-																 << right << setw(9)<< fixed<< setprecision(2)<< right << costPer[i];
+																 << right << setw(10)<< fixed<< setprecision(2)<< right << costPer[i];
 		subTotal += cost[i];
 	}
 
 	tax = subTotal * (8.25/100);  // calculates the tax
 	total = subTotal + tax;		  // calculates the Total
 
-	cout << "\nThe subtotal of the cart is " << setw(34) << right << "$"<< right << setw(9)<< fixed<< setprecision(2)<< subTotal ;
-	cout  << "\nThe tax is " << setw(51) << right << "$"<< right << setw(9)<< fixed<< setprecision(2)<< subTotal * (8.25/100);
-	cout << "\nThe total is " << setw(49) << right << "$"<< right << setw(9)<< fixed<< setprecision(2)<< total;
+	cout << "\nThe subtotal of the cart is " << setw(34) << right << "$"<< right << setw(10)<< fixed<< setprecision(2)<< subTotal ;
+	cout  << "\nThe tax is " << setw(51) << right << "$"<< right << setw(10)<< fixed<< setprecision(2)<< subTotal * (8.25/100);
+	cout << "\nThe total is " << setw(49) << right << "$"<< right << setw(10)<< fixed<< setprecision(2)<< total;
 
 }
 void init() {      // This init function, initializes all the functions, according to the required output.
