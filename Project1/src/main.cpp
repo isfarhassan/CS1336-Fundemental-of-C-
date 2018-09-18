@@ -1,4 +1,4 @@
-//CS 1336.502 Project 1 ixh170730  Isfar Hassan
+/*//CS 1336.502 Project 1 ixh170730  Isfar Hassan
 
 /*
  * The program assists a shopkeeper in
@@ -133,8 +133,8 @@ void watermelons() {		// Calculates the cost of watermelons in the cart
 
 void printCostToScreen(){  		// Prints to screen
 
-	string items [] = {"Asparagus", "Brussels Sprout(s)",
-			"Corn", "Lettuce", "Pumpkin(s)", "Watermelon(s)"};	// String items[] is defined, which is stores all
+	string items [] = {" Asparagus", " Brussels Sprout(s)",
+			" Corn", " Lettuce", " Pumpkin(s)", " Watermelon(s)"};	// String items[] is defined, which is stores all
 
 	for (int i = 0; i < 6; i++)				// For loop which starts at 0, and goes until less than then the number of items. 0 to 5 = 6 items.
 	{
@@ -165,4 +165,6 @@ void init() {      // This init function, initializes all the functions, accordi
 }
 
 // Isfar Hassan
+
+
 
