@@ -1,4 +1,4 @@
-This was the first project for CS 1336, Fundementals of programming in C++.
+This was the second project for CS 1336, Fundementals of programming in C++.
 
 This is a program that calculates a customer’s monthly bill for a mobile data service.
 
